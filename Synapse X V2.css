@@ -1,0 +1,99 @@
+/* Theme: Synapse X v2 Classic */
+/* Description: CREDIT TO ZADE A theme that replicates the classic dark grey, flat UI of Synapse X v2.20.6c, featuring sharp rectangular buttons and no special effects. */
+
+/* -- Core & Backgrounds -- */
+/* Sets the main background for the window, top bar, and bottom bar. */
+.custom-theme-active .editor-container,
+.custom-theme-active .top-bar,
+.custom-theme-active .bottom-bar,
+.custom-theme-active .scripts-panel {
+  background-color: #3c3f41 !important;
+  color: #dcdcdc;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+/* -- Editor Area -- */
+/* The text editor has a slightly darker background for contrast. */
+.custom-theme-active .monaco-editor,
+.custom-theme-active .monaco-editor-background {
+  background-color: #313335 !important;
+}
+
+/* -- Borders & Dividers -- */
+/* Minimal borders to separate the main UI components. */
+.custom-theme-active .top-bar { border-bottom: 1px solid #2b2b2b; }
+.custom-theme-active .bottom-bar { border-top: 1px solid #2b2b2b; }
+.custom-theme-active .scripts-panel { border-left: 1px solid #2b2b2b; }
+
+/* -- Tabs -- */
+/* The tab bar has its own dark background. */
+.custom-theme-active .tabs-bar {
+  background-color: #2b2b2b;
+  padding: 0;
+}
+.custom-theme-active .tab {
+  background-color: #2b2b2b; /* Inactive tabs match the bar */
+  color: #a0a0a0;
+  border: none;
+  border-right: 1px solid #222222; /* Thin line between tabs */
+  border-radius: 0; /* Sharp corners */
+  padding: 8px 15px;
+  transition: background-color 0.2s ease;
+}
+
+/* Active tab matches the editor background, making it look connected. */
+.custom-theme-active .tab.active {
+  background-color: #313335;
+  color: #dcdcdc;
+}
+
+.custom-theme-active .tab:hover {
+  background-color: #4a4d4f;
+  color: #ffffff;
+}
+
+/* -- Bottom Bar & Action Buttons -- */
+/* The bottom bar holds the buttons, aligned to the left like the image. */
+.custom-theme-active .bottom-bar {
+  padding: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px; /* A small gap between each button */
+}
+
+/* -- UPDATED: Flat, Rectangular Buttons -- */
+/* Buttons are styled to be perfectly rectangular with a flat appearance. */
+.custom-theme-active .action-button {
+  background-color: #4a4d4f;
+  color: #dcdcdc;
+  border: 1px solid #6e6e6e;
+  border-radius: 0; /* No rounded corners */
+  padding: 5px 15px;
+  font-weight: normal;
+  transition: background-color 0.2s ease;
+  text-shadow: none !important; /* Ensure no glow effect is applied */
+}
+
+/* -- Simple Button Hover Effect -- */
+/* A simple background and border color change on hover, with no glow. */
+.custom-theme-active .action-button:hover {
+  background-color: #5a5d5f;
+  border-color: #7e7e7e;
+  color: #ffffff;
+  text-shadow: none !important;
+}
+
+/* -- Editor Syntax Highlighting -- */
+.custom-theme-active .monaco-editor .token.string {
+  color: #ce9178 !important;
+}
+.custom-theme-active .monaco-editor .token.keyword {
+  color: #569cd6 !important;
+}
+.custom-theme-active .monaco-editor .line-numbers {
+  color: #858585 !important;
+}
+.custom-theme-active .monaco-editor .cursor {
+  background-color: #aeafad !important;
+}
